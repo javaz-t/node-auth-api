@@ -1,12 +1,14 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
-   "compilerOptions": {
+  "compilerOptions": {
     "module": "commonjs",
     "target": "ES2020",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "rootDir": ".",          // 👈 allow all files in project root
+    "outDir": "dist"
+  },
+  "include": ["src", "schema"]  // 👈 explicitly include both
 }
