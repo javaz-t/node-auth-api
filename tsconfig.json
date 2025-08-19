@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-      "module": "commonjs",
-    "target": "es6",
-    "esModuleInterop": true
-  },
-  "include": ["src"]
+    "outDir": "dist",          // Put compiled JS inside dist/
+    "rootDir": "src",          // Source files are in src/
+    "module": "commonjs",      // Node.js module system
+    "target": "es2019"         // Output newer JS (ES2019)
+  }
 }
