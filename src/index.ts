@@ -1,9 +1,9 @@
 import  Express   from "express"; 
-import authRouter from "../routes/authentication";
-import "dotenv/config"
+ import "dotenv/config"
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
+import authRouter from "./routes/authentication";
 
 const app = Express();
 app.use(bodyParser.json());
