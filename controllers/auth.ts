@@ -1,7 +1,7 @@
 import  Express   from "express";
-import User from "../schema/user";
 import bcrypt from "bcrypt";
 import  Jwt  from "jsonwebtoken";
+import User from "../schema/user";
  
 const registerUser =async ( req : Express.Request, res : Express.Response)=>{
     try{
